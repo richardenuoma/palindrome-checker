@@ -16,7 +16,6 @@ function getPalindrome(msg){
         return `${msg} is not a palindrome`;
     }
  
-    
 }
 
 window.addEventListener('DOMContentLoaded', ()=>{
