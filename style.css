@@ -1,0 +1,81 @@
+:root{
+    --bg: rgb(15, 15, 45);
+    --notification: rgb(32, 99, 32);
+    --checkBtn: rgb(110, 61, 190);
+    --checkbtnHover: rgb(137, 106, 186);
+    --textColor: white; 
+    --fontFamily: 'Poppins';
+}
+
+body{
+    background-color: var(--bg);
+    font-family: var(--fontFamily)
+}
+
+h1{
+    color: var(--textColor);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#input-container{
+    margin: 0px auto; 
+    background: var(--textColor);
+    width: 40%;
+    padding: 25px;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+#input-container p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#text-input,#check-btn{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+#text-input{
+    border-bottom: 2px solid var(--bg);
+    width: 60%;
+    background: none;
+    
+}
+
+input[type="text"]{
+    font-family: var(--fontFamily);
+    font-size: 16px;
+}
+
+#check-btn{
+    background: var(--checkBtn);
+    color: white;
+    width: 25%;
+    cursor: pointer;
+    font-family: var(--fontFamily);
+    font-size: 16px;
+}
+
+#check-btn:hover{
+    background: var(--checkbtnHover);
+}
+
+#textInput{
+    display: flex; 
+    gap: 10px;
+    justify-content: center;
+}
+
+ 
+#notification{
+    background: var(--notification);
+    color: var(--textColor);
+    padding: 25px;
+    width: 40%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
