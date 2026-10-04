@@ -6,8 +6,27 @@ const result = document.getElementById('result');
 
 
 function getPalindrome(msg){
-    const palindrome = msg.split("").reverse().join("").toLowerCase();
-    return msg.toLowerCase() === palindrome;
+    let cleaned = msg.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    const palindrome = cleaned.split("").reverse().join("");
+
+    if(cleaned === palindrome){
+        return `${msg} is a palindrome`;
+    }else{
+        return `${msg} is not a palindrome`;
+    }
+ 
+    
 }
 
-console.log(getPalindrome("Madam"));
+window.addEventListener('DOMContentLoaded', ()=>{
+    checkerBtn.addEventListener('click', ()=>{
+        let input = textInput.value.trim();
+        if(input === ""){
+            alert("Please input a value")
+            return;
+        } 
+        result.textContent = getPalindrome(input);
+    })
+})
+
